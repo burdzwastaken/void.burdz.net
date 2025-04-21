@@ -1,10 +1,10 @@
 # void.burdz.net
 
-burdz's minimalist personal landing page. cloud janitor extraordinaire.
+burdz minimalist personal landing page. cloud janitor extraordinaire :(){ :|:& };:
 
 ## About
 
-this is a minimalist, monospace-styled personal landing page with a simple blog system. the design focuses on simplicity, readability, and a terminal-inspired aesthetic.
+minimalist, monospace personal landing page with a simple blog system. the design focuses on simplicity, readability and a terminal-inspired aesthetic
 
 ## Features
 
@@ -26,9 +26,6 @@ this is a minimalist, monospace-styled personal landing page with a simple blog 
 ## Local Development
 
 ```bash
-git clone https://github.com/burdzwastaken/void.burdz.net.git
-cd void.burdz.net
-
 make serve
 ```
 
@@ -38,25 +35,7 @@ make serve
 make new-post
 ```
 
-after creating a post, add it to the `posts` array in script.js to make it visible on the site.
-
-## Deployment
-
-the site deploys automatically to github pages when changes are pushed to the master branch.
-
-## Directory Structure
-
-```
-.
-├── index.html           # main HTML file
-├── style.css            # styling
-├── script.js            # blog functionality
-├── .github/workflows/   # github actions workflow
-├── posts/               # blog posts (.MD files)
-├── CNAME                # custom domain configuration
-├── Makefile             # development helpers
-└── README.md            # whoami?
-```
+add the new post to the `posts` array in script.js to make it visible (good reminder to myself)
 
 ## License
 
