@@ -1,3 +1,10 @@
+const birthDate = new Date('1992-05-01');
+const now = new Date();
+const diffTime = Math.abs(now - birthDate);
+const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+const diffYears = Math.floor(diffDays / 365.25);
+const remainingDays = Math.floor(diffDays % 365.25);
+
 let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 let konamiPosition = 0;
 
@@ -121,7 +128,7 @@ document.addEventListener('keydown', function(e) {
         <p>> whoami</p>
         <p>burdz</p>
         <p>> uptime</p>
-        <p>uptime: 42 years, no sleep detected</p>
+        <p>uptime: ${diffYears} years, ${remainingDays} days, no sleep detected</p>
         <p>> kubectl get pods</p>
         <p>error: too many pods to display. you forgot to set a namespace again, didn't you?</p>
         <p>> kubectl delete deployment production</p>
@@ -131,7 +138,7 @@ document.addEventListener('keydown', function(e) {
         <p>> systemctl status life.service</p>
         <p>● life.service - Human Existence Manager
            Loaded: loaded (/etc/systemd/system/life.service; enabled; preset: enabled)
-           Active: degraded (running) since Mon 1970-01-01 00:00:01 UTC; 42 years ago
+           Active: degraded (running) since Fri 1992-05-01 00:00:01 UTC; ${diffYears} years ${remainingDays} days ago
          Main PID: 1 (burdz)
             Tasks: too many (coffee required)
            Memory: leaking
