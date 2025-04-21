@@ -48,14 +48,19 @@ the site deploys automatically to github pages when changes are pushed to the ma
 
 ```
 .
-├── index.html           # main HTML file
-├── style.css            # styling
-├── script.js            # blog functionality
-├── .github/workflows/   # github actions workflow
+├── .github/             # github liks dis
+│   └── workflows/       # automagical deployment configs
 ├── posts/               # blog posts (.MD files)
-├── CNAME                # custom domain configuration
+├── CNAME                # void.burdz.net
+├── .editorconfig        # most important file
+├── favicon.svg          # $_
+├── .gitignore           # look away git!
+├── index.html           # main HTML file
+├── LICENSE              # MIT license
 ├── Makefile             # development helpers
-└── README.md            # whoami?
+├── README.md            # whoami?
+├── script.js            # blog functionality
+└── style.css            # am I stylish yet?
 ```
 
 ## License
